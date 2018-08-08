@@ -1,6 +1,7 @@
 <?php 
-/**
-*/
+namespace  Weather\Models;
+use Weather\Libs\Model;
+
 class LoginModel extends Model
 {
 	function __construct()

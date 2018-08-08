@@ -1,4 +1,6 @@
 <?php
+namespace Weather\Libs;
+
 class Model
 {
 	public function __construct()
@@ -6,7 +8,5 @@ class Model
 		$instance = Database::getInstance();
 		$db = $instance->getConnection();
 		$this->db = $db;
-//		$db3 = Database::getInstance();
-//		var_dump($db3);	
 	}
 }

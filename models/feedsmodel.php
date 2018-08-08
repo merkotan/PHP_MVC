@@ -1,4 +1,7 @@
 <?php
+namespace Weather\Models;
+use Weather\Libs\Model;
+
 class FeedsModel extends Model
 {
 	function __construct()

@@ -1,8 +1,7 @@
 <?php 
-/**
-*/
-//use GuzzleHttp\Client;
-//use GuzzleHttp\Exception\RequestException;
+
+namespace  Weather\Controllers;
+use Weather\Libs\Controller;
 
 class Weather extends Controller
 {

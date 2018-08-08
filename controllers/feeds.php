@@ -1,7 +1,8 @@
-<?php 
-/** getPage - считаем, сколько страниц фидбеков,
-    getList - віводим постранично фидбеки по $this->limit = 4 фидбеков на страницу
-*/
+<?php
+
+namespace  Weather\Controllers;
+use Weather\Libs\Controller;
+
 class Feeds extends Controller
 {	
 	function __construct()

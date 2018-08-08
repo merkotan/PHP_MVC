@@ -1,6 +1,8 @@
 <?php 
-/**
-*/
+
+namespace  Weather\Controllers;
+use Weather\Libs\Controller;
+
 class Login extends Controller
 {
 	function __construct()
@@ -37,8 +39,8 @@ class Login extends Controller
 
 	public function userExit()
 	{
-		session_destroy();
-		//unset
+		unset($_SESSION['first_name']);
+		unset($_SESSION['email']);
 		$this->view->render('weather');
 	}
 }

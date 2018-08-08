@@ -1,8 +1,8 @@
 <?php 
-/**
-* 
-*/
-class WeatherModel 
+namespace  Weather\Models;
+use Weather\Libs\Model;
+
+class WeatherModel extends Model
 {
 	public function curlGet($url, $referer = 'http://www.google.com')
 	{

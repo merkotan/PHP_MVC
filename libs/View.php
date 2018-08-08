@@ -1,4 +1,6 @@
 <?php
+namespace Weather\Libs;
+
 class View 
 {
 	public function render($name, $arg=false, $count = false)

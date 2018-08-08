@@ -1,6 +1,8 @@
 <?php 
-/**
-*/
+
+namespace  Weather\Controllers;
+use Weather\Libs\Controller;
+
 class Feedback extends Controller
 {
 	function __construct()

@@ -1,4 +1,6 @@
 <?php
+namespace Weather\Libs;
+
 class Controller {
 	function __construct()
 	{
@@ -8,7 +10,7 @@ class Controller {
 	public function loadModel($name)
 	{
 		$path = 'models/'.$name.'model.php';
-		$modelName = $name.'Model';
+		$modelName = MODEL_NM.$name.'Model';
 		if (file_exists($path)) {
 			require $path;
 			$this->model = new $modelName;
