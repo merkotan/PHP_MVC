@@ -1,11 +1,10 @@
 <?php
 spl_autoload_register(function ($class) {
-
     // project-specific namespace prefix
-    $prefix = 'Weather\\Libs\\';
+    $prefix = 'Weather\\';
 
     // base directory for the namespace prefix
-    $base_dir = __DIR__ . '/libs/';
+    $base_dir = __DIR__ .'/';
 
     // does the class use the namespace prefix?
     $len = strlen($prefix);
@@ -20,8 +19,9 @@ spl_autoload_register(function ($class) {
     // replace the namespace prefix with the base directory, replace namespace
     // separators with directory separators in the relative class name, append
     // with .php
-    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+    $file = $base_dir . $relative_class . '.php';
 
+ $file=strtolower($file);
     // if the file exists, require it
     if (file_exists($file)) {
         require $file;
