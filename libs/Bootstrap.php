@@ -25,10 +25,11 @@ class Bootstrap
 			//$controller->loadModel('Weather');
 		} else {
 			$path = 'controllers/'.$url[0].'.php';
-				if (file_exists($path)) {
+			$pathm = 'models/'.$url[0].'model.php';
+				if ((file_exists($path))&&(file_exists($pathm))) {
 					$u=CONTROLLER_NM.$url[0];
 					$controller = new $u;
-					$u=MODEL_NM. ucfirst($url[0]).'Model';
+					$u=MODEL_NM.ucfirst($url[0]).'Model';
 					$model = new $u;
 				//	$controller->loadModel($url[0]);
 				} else {
