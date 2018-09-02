@@ -19,8 +19,7 @@ class Bootstrap
 
 		} else {
 			$path = 'controllers/'.$url[0].'.php';
-			$pathm = 'models/'.$url[0].'model.php';
-				if ((file_exists($path))&&(file_exists($pathm))) {
+				if (file_exists($path)) {
 					$u=CONTROLLER_NM.$url[0];
 					$controller = new $u;
 				} else {
