@@ -1,13 +1,17 @@
 <?php
 namespace Weather\Libs;
 
-class Controller {
+class Controller 
+{
+	public $model;
+//	public $view;
+
 	function __construct()
 	{
 		$this->view = new View(); 
 	}
 
-	public function loadModel($name)
+/*	public function loadModel($name)
 	{
 		$path = 'models/'.$name.'model.php';
 		$modelName = MODEL_NM.$name.'Model';
@@ -15,5 +19,5 @@ class Controller {
 			$this->model = new $modelName;
 		}
 	}
-
+*/
 }

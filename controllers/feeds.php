@@ -2,12 +2,14 @@
 
 namespace  Weather\Controllers;
 use Weather\Libs\Controller;
+use Weather\Models\FeedsModel;
 
 class Feeds extends Controller
 {	
 	function __construct()
 	{
 		parent::__construct();
+		$this->model = new FeedsModel;
 	}
 
 	public function index()

@@ -2,12 +2,14 @@
 
 namespace  Weather\Controllers;
 use Weather\Libs\Controller;
+use Weather\Models\FeedbackModel;
 
 class Feedback extends Controller
 {
 	function __construct()
 	{
 		parent::__construct();
+		$this->model = new FeedbackModel;
 	}
 
 	public function index()

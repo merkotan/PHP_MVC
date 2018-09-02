@@ -2,6 +2,7 @@
 
 namespace  Weather\Controllers;
 use Weather\Libs\Controller;
+use Weather\Models\WeatherModel;
 
 class Weather extends Controller
 {
@@ -9,6 +10,7 @@ class Weather extends Controller
 	function __construct()
 	{
 		parent:: __construct();
+		$this->model = new WeatherModel;
 	}
 	
 	public function index()

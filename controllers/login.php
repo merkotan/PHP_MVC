@@ -2,12 +2,14 @@
 
 namespace  Weather\Controllers;
 use Weather\Libs\Controller;
+use Weather\Models\LoginModel;
 
 class Login extends Controller
 {
 	function __construct()
 	{
 		parent::__construct();
+		$this->model = new LoginModel;
 	}
 
 	public function index()
